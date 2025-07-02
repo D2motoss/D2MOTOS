@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D2 Motos</title>
+  <link rel="icon" type="image/x-icon" href="imagens/logo_D2_motos.png">
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-custom" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="imagens/Logo_D2_horizontal.png" alt="Logo da Loja">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menuPrincipal">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="menuPrincipal" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="index.html">Início</a>
+        <a class="navbar-item" href="motos.html">Estoque</a>
+        <a class="navbar-item" href="sobre.html">Sobre</a>
+        <a class="navbar-item" href="contato.html">Contato</a>
+        <a class="navbar-item" href="localizacao.html">Localização</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrossel Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="imagens/Fachada_D2Motos.jpg" alt="banner 1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="imagens/Banner_zap_D2motos.png" alt="banner 2" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/motos2.png" alt="banner 3" />
+      </div>
+    </div>
+
+    <!-- Botões de navegação -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Paginação -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title has-text-centered">Escolha seu sonho aqui!</h2>
+
+<!-- Seção das motos -->
+<section class="section">
+  <div class="container">
+
+    <div class="columns is-multiline">
+        <!-- Card 1 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/MT07_2021.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Yamaha MT07 ABS 2021</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 41.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 32.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 2 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/CB500x_2022.jpg" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda CB500X 2022</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 49.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 27.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 3 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Himalayan_411_2020.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Royal Enfield Himalayan 411 2020</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 19.490</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 39.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+         <!-- Card 4 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/moto_em_producao.jpg" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda XRE 300 ABS 2015</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 19.490</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 70.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 5 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/moto_em_producao.jpg" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Yamaha Lander 250 ABS 2021</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 24.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 39.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 6 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Twister_250_C_2021.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Twister 250 2021</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 21.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 50.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 7 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Twister_250_2021.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Twister 250 2021</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 21.490</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 63.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 8 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Twister_250_2020.jpg" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Twister 250 ABS 2020</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 20.490</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 32.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 9 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Twister_250_2019.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Twister 250 ABS 2020</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 17.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 164.000 km rodados</p>
+            <p class="is-size-6">ABAIXO DA FIPE.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 10 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/moto_em_producao.jpg" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Twister 250 2018</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 17.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 40.000 km rodados</p>
+            <p class="is-size-6">ABAIXO DA FIPE.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 11 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/moto_em_producao.jpg" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Twister CBX 250 2008</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 11.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 23.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 12 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Tenere_250_2014.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Yamaha XTZ Teneré 250 2014</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 17.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 111.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 13 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/moto_em_producao.jpg" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda XRE 190 ADV 2023</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 24.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 17.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 14 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/DR_160_S_2025_0KM.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Haojue DR 160 S 2025 - 0KM</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 21.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 0 km rodados</p>
+            <p class="is-size-6">0km.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 15 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Titan_160_ABS_2025_0KM.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Titan 160 ABS 2025 - 0KM</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 24.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 0 km rodados</p>
+            <p class="is-size-6">0km.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 16 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/moto_em_producao.jpg" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Fan 160 2022</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 18.490</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 13.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 17 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Start_160_2021.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Start 160 2021</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 20.490</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 32.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 18 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Factor_150_2023.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Yamaha Factor 150 2023</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 16.490</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 17.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 19 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/moto_em_producao.jpg" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Yamaha Fazer 150 SED 2017</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 16.490</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 13.990 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 20 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/moto_em_producao.jpg" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Bros 150 ES 2007</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 8.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 70.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 21 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/CG_150_KS_2007.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda CG Titan 150 KS 2007</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 8.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 27.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 22 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Biz_125_EX_2025_0km.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Biz 125 EX 2025 - 0km</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 21.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 0 km rodados</p>
+            <p class="is-size-6">0km.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 23 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Biz_125i_2023.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Biz 125i 2023</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 17.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 14.500 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 24 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Biz_125i_2022.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Biz 125i 2022</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 17.490</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 13.900 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 25 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Biz_125i_2020.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Biz 125i 2020</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 16.490</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 2.000 km rodados</p>
+            <p class="is-size-6">Apenas 2.000 quilometrôs rodados.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 26 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Biz_125i_2020V.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Biz 125i 2020</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 15.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 16.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 27 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/moto_em_producao.jpg" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Biz 125i 2018</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 14.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 47.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 28 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Biz_125_EX_2015.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Biz 125 EX 2015</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 12.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 88.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+      
+        <!-- Card 29 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Biz_125_EX_2014.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Biz 125 EX 2014</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 12.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i>66.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 30 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Biz_125_ES_2014.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Biz 125 ES 2014</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 11.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 75.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 31 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/moto_em_producao.jpg" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Biz 125 ES 2014</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 11.490</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 65.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 32 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/moto_em_producao.jpg" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Biz 110i 2018</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 12.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 18.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 33 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Biz_110i_2021.JPEG" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Honda Biz 110i 2021</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 13.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 18.000 km rodados</p>
+            <p class="is-size-6">Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 34-->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="motos_a_venda/Happy_350w.JPEG"Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 mb-2">Bicicleta elética Happy 350w</p>
+            <p class="has-text-danger has-text-weight-bold is-size-5 mb-1">R$ 4.990</p>
+            <p class="is-size-7 has-text-grey mb-3"><i class="fas fa-tachometer-alt"></i> 0 km rodados</p>
+            <p class="is-size-6">0km.</p>
+          </div>
+        </div>
+      </div>
+
+</section>
+
+<!-- Rodapé -->
+<footer class="footer has-background-black has-text-white-ter">
+  <div class="content has-text-centered">
+    <p class="title is-5 has-text-white">Contato</p>
+
+    <div class="columns is-mobile is-centered">
+      <div class="column is-narrow">
+        <p><strong>WhatsApp:</strong> <br>
+          (47) 99626-4683 <br>
+          (47) 99683-4199</p>
+        <p><strong>Email:</strong> <br>
+          d2motosm@gmail.com</p>
+        <p><strong>Horário de atendimento:</strong> <br>
+          Seg a Sex - 08:30h às 12h e 13:30h às 18h <br>
+          Sábado - 8:30h às 12h </p>
+      </div>
+    </div>
+
+    <p class="is-size-7 has-text-grey-light mt-4">
+      &copy; 2025 D2 Motos. Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
